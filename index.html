@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мініпроект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Serials</h2>
+        <nav>
+            <ul>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#top10">Топ 10</a></li>
+                <li><a href="#about">Про проект</a></li>
+                <li><a href="#contact">Контакти</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Топ серіалів Netflix 2026 🎥</h1>
+        <p>Від кримінальних трилерів до романтики та фантастики — відкрий найкращі серіали Netflix цього року. Обирай, що подивитись сьогодні 🍿</p>
+    </section>
+    <section>
+        <button>Всі</button>
+        <button>Романтика</button>
+        <button>Комедія</button>
+        <button>Драма</button>
+        <button>Фантастика</button>
+        <button>Кримінал</button>
+
+    </section>
+
+    <main class="grid-layout">
+        <article>
+                <img src="./images/stranger things.jpg" alt="Stranger Things" width="250" height="345">
+                <p>Фантастика</p>
+                <h3>Stranger Things</h3>
+                <p>2016 - 2025</p>
+                <button data-modal-open>Відкрити</button>
+        </article>
+
+        <article>
+                <img src="./images/wednesday.jpg" alt="Wednesday" width="250" height="345">
+                <p>Комедія</p>
+                <h3>Wednesday</h3>
+                <p>2022 - 2023</p>
+                <button data-modal-open2>Відкрити</button>
+        </article>
+
+        <article>
+                <img src="./images/bridgerton.jpg" alt="Bridgerton" width="250" height="345">
+                <p>Романтика</p>
+                <h3>Bridgerton</h3>
+                <p>2020 - 2023</p>
+                <button data-modal-open3>Відкрити</button>
+        </article>
+
+        <article>
+                <img src="./images/sherlock.jpg" alt="Sherlock" width="250" height="345">
+                <p>Детектив</p>
+                <h3>Sherlock</h3>
+                <p>2010 - 2017</p>
+                <button data-modal-open4>Відкрити</button>
+        </article>
+
+        <article>
+                <img src="./images/a good girl's guide.jpg" alt="A Good Girl's Guide to Murder" width="250" height="345">
+                <p>Кримінал</p>
+                <h3>A Good Girl's Guide to Murder</h3>
+                <p>2022 - 2023</p>
+                <button data-modal-open5>Відкрити</button>
+        </article>
+
+        <article>
+                <img src="./images/ferze gambit.jpg" alt="Ферзевий гамбіт" >
+                <p>Романтика</p>
+                <h3>Ферзевий гамбіт</h3>
+                <p>2020 - 2023</p>
+                <button data-modal-open6>Відкрити</button>
+        </article>
+
+    </main>
+
+    <footer>
+        <p></p>
+        <nav></nav>
+        <p>&copy; 2026 </p>
+    </footer>
+<!-- МОДАЛКИ -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close>✕</button>
+            <h2>Про нас</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal2>
+        <div class="modal">
+            <button data-modal-close2>✕</button>
+            <h2>Напрямки</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal3>
+        <div class="modal">
+            <button data-modal-close3>✕</button>
+            <h2>Поради</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal4>
+        <div class="modal">
+            <button data-modal-close4>✕</button>
+            <h2>Контакти</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal5>
+        <div class="modal">
+            <button data-modal-close5>✕</button>
+            <h2>Контакти</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal6>
+        <div class="modal">
+            <button data-modal-close6>✕</button>
+            <h2>Контакти</h2>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="backdrop is-hidden" data-modal5>
+        <div class="modal">
+            <button data-modal-close5>✕</button>
+            <h2>Контакти</h2>
+
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal6>
+        <div class="modal">
+            <button data-modal-close6>✕</button>
+            <h2>Контакти</h2>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+    
+</body>
+</html>
