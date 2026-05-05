@@ -24,11 +24,12 @@
     </header>
 
     <section class="hero">
-        <h1>Топ серіалів Netflix 2026 🎥</h1>
-        <p>Від кримінальних трилерів до романтики та фантастики — відкрий найкращі серіали Netflix цього року. Обирай, що подивитись сьогодні 🍿</p>
+        <span class="hero-badge">🔥 Netflix 2026</span>
+        <h1>Топ серіалів <em>Netflix </em>2026 🎥</h1>
+        <h3>Від кримінальних трилерів до романтики та фантастики — відкрий найкращі серіали Netflix цього року. Обирай, що подивитись сьогодні 🍿</h3>
     </section>
-    <section>
-        <button>Всі</button>
+    <section class="container">
+        <button class="is-active">Всі</button>
         <button>Романтика</button>
         <button>Комедія</button>
         <button>Драма</button>
@@ -37,54 +38,72 @@
 
     </section>
 
-    <main class="grid-layout">
-        <article>
-                <img src="./images/stranger things.jpg" alt="Stranger Things" width="250" height="345">
-                <p>Фантастика</p>
-                <h3>Stranger Things</h3>
-                <p>2016 - 2025</p>
-                <button data-modal-open>Відкрити</button>
-        </article>
+    <main class="catalog">
+        <div class="catalog-grid">
+            <article class="card-poster">
+                <span class="rate-badge">⭐8.7</span>
 
-        <article>
-                <img src="./images/wednesday.jpg" alt="Wednesday" width="250" height="345">
+                <img src="./images/stranger things.jpg" alt="Stranger Things" width="250" height="345">
+                <div class="card-body">
+                    <p>Фантастика</p>
+                    <h3>Stranger Things</h3>
+                    <p>2016 - 2025</p>
+                </div>
+                <button data-modal-open>Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+
+            <article class="card-poster">
+                <span class="rate-badge">⭐8.2</span>
+                <img src="./images/wednesday.jpg" alt="Wednesday" width="300" height="400">
                 <p>Комедія</p>
                 <h3>Wednesday</h3>
                 <p>2022 - 2023</p>
                 <button data-modal-open2>Відкрити</button>
-        </article>
+                <div class="card-overlay"></div>
+            </article>
 
-        <article>
+            <article class="card-poster">
+                <span class="rate-badge">⭐7.5</span>
                 <img src="./images/bridgerton.jpg" alt="Bridgerton" width="250" height="345">
                 <p>Романтика</p>
                 <h3>Bridgerton</h3>
                 <p>2020 - 2023</p>
                 <button data-modal-open3>Відкрити</button>
-        </article>
+                <div class="card-overlay"></div>
+            </article>
 
-        <article>
+            <article class="card-poster">
+                <span class="rate-badge">⭐8.0</span>
                 <img src="./images/sherlock.jpg" alt="Sherlock" width="250" height="345">
                 <p>Детектив</p>
                 <h3>Sherlock</h3>
                 <p>2010 - 2017</p>
                 <button data-modal-open4>Відкрити</button>
-        </article>
+                <div class="card-overlay"></div>
+            </article>
 
-        <article>
+            <article class="card-poster">
+                <span class="rate-badge">⭐8.5</span>
                 <img src="./images/a good girl's guide.jpg" alt="A Good Girl's Guide to Murder" width="250" height="345">
                 <p>Кримінал</p>
                 <h3>A Good Girl's Guide to Murder</h3>
                 <p>2022 - 2023</p>
                 <button data-modal-open5>Відкрити</button>
-        </article>
+                <div class="card-overlay"></div>
+            </article>
 
-        <article>
-                <img src="./images/ferze gambit.jpg" alt="Ферзевий гамбіт" >
+            <article class="card-poster">
+                <span class="rate-badge">⭐8.5</span>
+                <img src="./images/ferze gambit.jpg" alt="Ферзевий гамбіт" width="250" height="345">
                 <p>Романтика</p>
                 <h3>Ферзевий гамбіт</h3>
                 <p>2020 - 2023</p>
                 <button data-modal-open6>Відкрити</button>
-        </article>
+                <div class="card-overlay"></div>
+            </article>
+        </div>
+
 
     </main>
 
