@@ -194,3 +194,21 @@ img{
     overflow: hidden;
 
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}   
