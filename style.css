@@ -126,46 +126,71 @@ img{
 .rate-badge{
     position: absolute;
     top: 10px;
-    right: 10px
+    right: 10px;
+    background-color: var(--primary-color);
 }
 
 .card-overlay{
     position: absolute;
     inset: 0;
-    opacity: 0
+    opacity: 0;
 }
 
 .card-overlay:hover{
+    background-color: rgba(42, 24, 24, 0.616);
     opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .backdrop {
     position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 214, 249, 0.5);
     z-index: 100;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.backdrop.is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
 .modal {
+    position: relative;
+    width: min(700px, 90vw);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 32px;   
+    background: #141b2d;
+    border-radius: 16px;
+    color: white;
+}
+
+.close-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 400px;
-    min-height: 200px;
-    padding: 24px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
-    color: blue;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-inner {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 24px;
+}
+
+.no-scroll {
+    overflow: hidden;
 
 }

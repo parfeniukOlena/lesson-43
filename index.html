@@ -24,8 +24,8 @@
     </header>
 
     <section class="hero">
-        <span class="hero-badge">🔥 Netflix 2026</span>
-        <h1>Топ серіалів <em>Netflix </em>2026 🎥</h1>
+        <span class="hero-badge">🔥 Netflix </span>
+        <h1>Топ серіалів <em>Netflix </em>🎥</h1>
         <h3>Від кримінальних трилерів до романтики та фантастики — відкрий найкращі серіали Netflix цього року. Обирай, що подивитись сьогодні 🍿</h3>
     </section>
     <section class="container">
@@ -44,64 +44,76 @@
                 <span class="rate-badge">⭐8.7</span>
 
                 <img src="./images/stranger things.jpg" alt="Stranger Things" width="250" height="345">
-                <div class="card-body">
-                    <p>Фантастика</p>
-                    <h3>Stranger Things</h3>
-                    <p>2016 - 2025</p>
-                </div>
-                <button data-modal-open>Відкрити</button>
+                
+                <button data-modal-open class="open-modal">Відкрити</button>
                 <div class="card-overlay"></div>
             </article>
+            <div class="card-body">
+                <p>Фантастика</p>
+                <h3>Stranger Things</h3>
+                <p>2016 - 2025</p>
+            </div>
 
             <article class="card-poster">
                 <span class="rate-badge">⭐8.2</span>
                 <img src="./images/wednesday.jpg" alt="Wednesday" width="300" height="400">
+
+                <button data-modal-open2 class="open-modal">Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+            <div class="card-body">
                 <p>Комедія</p>
                 <h3>Wednesday</h3>
                 <p>2022 - 2023</p>
-                <button data-modal-open2>Відкрити</button>
-                <div class="card-overlay"></div>
-            </article>
-
+            </div>
             <article class="card-poster">
                 <span class="rate-badge">⭐7.5</span>
                 <img src="./images/bridgerton.jpg" alt="Bridgerton" width="250" height="345">
+                
+                <button data-modal-open3 class="open-modal">Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+            <div class="card-body">
                 <p>Романтика</p>
                 <h3>Bridgerton</h3>
                 <p>2020 - 2023</p>
-                <button data-modal-open3>Відкрити</button>
-                <div class="card-overlay"></div>
-            </article>
-
+            </div>
             <article class="card-poster">
                 <span class="rate-badge">⭐8.0</span>
                 <img src="./images/sherlock.jpg" alt="Sherlock" width="250" height="345">
+                
+                <button data-modal-open4 class="open-modal">Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+            <div class="card-body">
                 <p>Детектив</p>
                 <h3>Sherlock</h3>
                 <p>2010 - 2017</p>
-                <button data-modal-open4>Відкрити</button>
-                <div class="card-overlay"></div>
-            </article>
-
+            </div>
             <article class="card-poster">
                 <span class="rate-badge">⭐8.5</span>
-                <img src="./images/a good girl's guide.jpg" alt="A Good Girl's Guide to Murder" width="250" height="345">
+                <img src="./images/a good girls guide.jpg" alt="A Good Girl's Guide to Murder" width="250" height="345">
+                
+                <button data-modal-open5 class="open-modal">Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+            <div class="card-body">
                 <p>Кримінал</p>
                 <h3>A Good Girl's Guide to Murder</h3>
                 <p>2022 - 2023</p>
-                <button data-modal-open5>Відкрити</button>
-                <div class="card-overlay"></div>
-            </article>
-
+            </div>
             <article class="card-poster">
                 <span class="rate-badge">⭐8.5</span>
                 <img src="./images/ferze gambit.jpg" alt="Ферзевий гамбіт" width="250" height="345">
+                
+                <button data-modal-open6 class="open-modal">Відкрити</button>
+                <div class="card-overlay"></div>
+            </article>
+            <div class="card-body">
                 <p>Романтика</p>
                 <h3>Ферзевий гамбіт</h3>
                 <p>2020 - 2023</p>
-                <button data-modal-open6>Відкрити</button>
-                <div class="card-overlay"></div>
-            </article>
+            </div>
         </div>
 
 
@@ -116,7 +128,7 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close>✕</button>
+            <button data-modal-close class="close-btn">✕</button>
             <h2>Про нас</h2>
 
         </div>
@@ -124,7 +136,7 @@
 
     <div class="backdrop is-hidden" data-modal2>
         <div class="modal">
-            <button data-modal-close2>✕</button>
+            <button data-modal-close2 class="close-btn">✕</button>
             <h2>Напрямки</h2>
 
         </div>
@@ -132,7 +144,7 @@
 
     <div class="backdrop is-hidden" data-modal3>
         <div class="modal">
-            <button data-modal-close3>✕</button>
+            <button data-modal-close3 class="close-btn">✕</button>
             <h2>Поради</h2>
 
         </div>
@@ -140,15 +152,7 @@
 
     <div class="backdrop is-hidden" data-modal4>
         <div class="modal">
-            <button data-modal-close4>✕</button>
-            <h2>Контакти</h2>
-
-        </div>
-    </div>
-
-    <div class="backdrop is-hidden" data-modal5>
-        <div class="modal">
-            <button data-modal-close5>✕</button>
+            <button data-modal-close4 class="close-btn">✕</button>
             <h2>Контакти</h2>
 
         </div>
@@ -156,7 +160,7 @@
 
     <div class="backdrop is-hidden" data-modal6>
         <div class="modal">
-            <button data-modal-close6>✕</button>
+            <button data-modal-close6 class="close-btn">✕</button>
             <h2>Контакти</h2>
 
         </div>
@@ -166,7 +170,7 @@
 
     <div class="backdrop is-hidden" data-modal5>
         <div class="modal">
-            <button data-modal-close5>✕</button>
+            <button data-modal-close5 class="close-btn">✕</button>
             <h2>Контакти</h2>
 
         </div>
@@ -174,7 +178,7 @@
 
     <div class="backdrop is-hidden" data-modal6>
         <div class="modal">
-            <button data-modal-close6>✕</button>
+            <button data-modal-close6 class="close-btn">✕</button>
             <h2>Контакти</h2>
 
         </div>
